@@ -1,8 +1,7 @@
-/* --- Global Reset & Base Styles --- */
 :root {
-    --primarycolor: #1A1A1A; /* Dark Charcoal - near black */
-    --secondarycolor: #FFD700; /* Bright Yellow */
-    --accentcolor: #F5F5F5;   /* Light Gray / Off-White */
+    --primarycolor: #1A1A1A; 
+    --secondarycolor: #FFD700; 
+    --accentcolor: #F5F5F5;   
     --textcolor: #FFFFFF;
     --textdark: #333333;
     --navheight: 70px;
@@ -22,10 +21,10 @@ html {
 
 body {
     font-family: var(--fontprimary);
-    background-color: var(--accentcolor); /* Light background for most content */
+    background-color: var(--accentcolor); 
     color: var(--textdark);
     line-height: 1.7;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; 
 }
 
 .container {
@@ -71,7 +70,6 @@ img {
     font-weight: 700;
 }
 
-/* --- Navbar --- */
 .navbar {
     background-color: var(--primarycolor);
     color: var(--textcolor);
@@ -136,7 +134,7 @@ img {
 }
 
 .menubutton {
-    display: none; /* Hidden by default, shown on mobile */
+    display: none; 
     background: none;
     border: none;
     color: var(--textcolor);
@@ -147,7 +145,6 @@ img {
 }
 
 
-/* --- Buttons --- */
 .button {
     display: inline-block;
     padding: 12px 28px;
@@ -167,7 +164,7 @@ img {
 }
 
 .primarybutton:hover {
-    background-color: #ffcf00; /* Slightly darker yellow */
+    background-color: #ffcf00; 
     border-color: #ffcf00;
     color: var(--primarycolor);
 }
@@ -277,7 +274,6 @@ img {
 }
 
 
-/* --- Hero Section (Home Page) --- */
 .hero {
     background-color: var(--primarycolor);
     color: var(--textcolor);
@@ -286,7 +282,7 @@ img {
     align-items: center;
     padding: 40px 0;
     position: relative;
-    overflow: hidden; /* For abstract shape */
+    overflow: hidden; 
 }
 
 .herocontent {
@@ -297,7 +293,7 @@ img {
 }
 
 .herotext {
-    flex: 1.2; /* Give more space to text */
+    flex: 1.2; 
     animation: slideInFromLeft 0.8s ease-out;
 }
 
@@ -318,12 +314,12 @@ img {
 .herotext .introduction {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #ccc; /* Lighter than accent for contrast */
+    color: #ccc; 
 }
 
 .herotext .button {
     margin-right: 15px;
-    margin-bottom: 10px; /* For stacking on small screens */
+    margin-bottom: 10px; 
 }
 .herotext .secondarybutton {
     color: var(--textcolor);
@@ -346,13 +342,13 @@ img {
 .abstractshape {
     width: 500px;
     height: 500px;
-    background: linear-gradient(135deg, #ffd9007a 0%, #ffec8000 100%), url(images/BONY6666.jpg); /* Yellow gradient */
-    /* background-position: center center; */
+    background: linear-gradient(135deg, #ffd9007a 0%, #ffec8000 100%), url(images/BONY6666.jpg); 
+    
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Blob shape */
-    /* animation: morph 8s ease-in-out infinite alternate; */
-    /* Optional: add a subtle shadow to lift it */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
+    
+    
     box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
 }
 
@@ -526,7 +522,6 @@ ul {
     }
 }
 
-/* --- Quick Summary Section --- */
 .quicksummary {
     padding: 60px 0;
     background-color: var(--accentcolor);
@@ -543,7 +538,7 @@ ul {
 
 .summaryitem {
     flex: 1;
-    min-width: 150px; /* Ensure items don't get too squished */
+    min-width: 150px; 
 }
 
 .summaryitem h3 {
@@ -557,10 +552,9 @@ ul {
     color: var(--textdark);
 }
 
-/* --- Featured Work Section --- */
 .featuredwork {
     padding: 80px 0;
-    background-color: #FFFFFF; /* White background */
+    background-color: #FFFFFF; 
 }
 
 .featuredwork h2 {
@@ -599,7 +593,7 @@ ul {
     font-family: var(--fontsecondary);
 }
 .placeholderimage.wide {
-    height: 200px; /* Adjust as needed for portfolio page */
+    height: 200px; 
 }
 
 
@@ -628,7 +622,6 @@ ul {
     margin-top: 40px;
 }
 
-/* --- Footer --- */
 .footer {
     background-color: var(--primarycolor);
     color: var(--accentcolor);
@@ -647,10 +640,9 @@ ul {
 
 .footer .sociallinks a {
     margin: 0 10px;
-    /* Add styles for social icons if using SVGs or font icons */
+    
 }
 
-/* --- Page Header (for About, Portfolio, Contact pages) --- */
 .pageheader {
     background-color: var(--primarycolor);
     color: var(--textcolor);
@@ -669,7 +661,6 @@ ul {
     margin-right: auto;
 }
 
-/* --- About Page --- */
 .aboutcontent {
     padding: 60px 0;
     background-color: #FFFFFF;
@@ -677,19 +668,19 @@ ul {
 
 .aboutgrid {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Image takes 1 part, text takes 2 */
+    grid-template-columns: 1fr 2fr; 
     gap: 40px;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
 }
 
 .aboutimage img {
     width: 100%;
-    max-width: 350px; /* Control image size */
+    max-width: 350px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    /* For abstract shape if no image */
-    /* background-color: var(--secondarycolor); min-height: 300px; border-radius: 8px; */
+    
+    
 }
 .abstractprofile {
     width: 100%;
@@ -740,7 +731,7 @@ ul {
     max-width: 800px;
     margin: 0 auto;
 }
-.timeline::after { /* The central line */
+.timeline::after { 
     content: '';
     position: absolute;
     width: 3px;
@@ -756,7 +747,7 @@ ul {
     background-color: inherit;
     width: 50%;
 }
-.timelineitem::after { /* The circles on the timeline */
+.timelineitem::after { 
     content: '';
     position: absolute;
     width: 15px;
@@ -768,15 +759,15 @@ ul {
     border-radius: 50%;
     z-index: 1;
 }
-/* Place items to the left */
+
 .timelineitem:nth-child(odd) {
     left: 0;
 }
-/* Place items to the right */
+
 .timelineitem:nth-child(even) {
     left: 50%;
 }
-/* Fix the circle for right-sided items */
+
 .timelineitem:nth-child(even)::after {
     left: -6.5px;
 }
@@ -797,7 +788,6 @@ ul {
 }
 
 
-/* --- Portfolio Page --- */
 .projects {
     padding: 60px 0;
     background-color: #FFFFFF;
@@ -805,37 +795,37 @@ ul {
 
 .portfoliogrid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 50px; /* Increased gap for more visual separation */
+    grid-template-columns: 1fr; 
+    gap: 50px; 
 }
 
 .portfoliocard {
     display: grid;
-    grid-template-columns: 1fr; /* Stacks image and details on small screens */
+    grid-template-columns: 1fr; 
     gap: 30px;
     background-color: var(--accentcolor);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     align-items: center;
-    overflow: hidden; /* Ensure content doesn't break out */
+    overflow: hidden; 
 }
 
-/* On larger screens, create a two-column layout for each card */
+
 @media (min-width: 768px) {
     .portfoliocard {
-        grid-template-columns: 1fr 1.5fr; /* Image, then details */
+        grid-template-columns: 1fr 1.5fr; 
     }
-    /* Alternate layout for even cards for a unique feel */
+    
     .portfoliocard:nth-child(even) {
-        grid-template-columns: 1.5fr 1fr; /* Details, then image */
+        grid-template-columns: 1.5fr 1fr; 
     }
     .portfoliocard:nth-child(even) .cardimage {
-        grid-column: 2 / 3; /* Puts image on the right */
+        grid-column: 2 / 3; 
         grid-row: 1 / 2;
     }
     .portfoliocard:nth-child(even) .carddetails {
-        grid-column: 1 / 2; /* Puts details on the left */
+        grid-column: 1 / 2; 
         grid-row: 1 / 2;
     }
 }
@@ -844,8 +834,8 @@ ul {
 .cardimage img {
     width: 100%;
     height: auto;
-    max-height: 350px; /* Limit image height */
-    object-fit: cover; /* Or 'contain' if you want to see the whole image */
+    max-height: 350px; 
+    object-fit: cover; 
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -887,7 +877,6 @@ ul {
     margin-bottom: 10px;
 }
 
-/* --- Contact Page --- */
 .contactsection {
     padding: 60px 0;
     background-color: #FFFFFF;
@@ -895,13 +884,13 @@ ul {
 
 .contactlayout {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr; 
     gap: 40px;
 }
 
 @media (min-width: 992px) {
     .contactlayout {
-        grid-template-columns: 1fr 1.5fr; /* Info on left, form on right */
+        grid-template-columns: 1fr 1.5fr; 
     }
 }
 
@@ -973,10 +962,9 @@ ul {
 }
 
 
-/* --- Responsive Design Adjustments --- */
 @media (max-width: 992px) {
     .herocontent {
-        flex-direction: column-reverse; /* Image on top on smaller screens */
+        flex-direction: column-reverse; 
         text-align: center;
     }
     .herotext {
@@ -988,10 +976,10 @@ ul {
     .abstractshape { width: 250px; height: 250px; }
 
     .aboutgrid {
-        grid-template-columns: 1fr; /* Stack image and text */
+        grid-template-columns: 1fr; 
     }
     .aboutimage {
-        margin: 0 auto 30px auto; /* Center image */
+        margin: 0 auto 30px auto; 
         max-width: 300px;
     }
     .abstractprofile { margin: 0 auto 30px auto; max-width: 300px; height: 330px; }
@@ -1002,7 +990,7 @@ ul {
     h2 { font-size: 1.8rem; }
 
     .navlinks {
-        display: none; /* Hide regular nav links */
+        display: none; 
         position: absolute;
         top: var(--navheight);
         left: 0;
@@ -1014,7 +1002,7 @@ ul {
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
     .navlinks.open {
-        display: flex; /* Show when 'open' class is added */
+        display: flex; 
     }
     .navlinks ul {
         flex-direction: column;
@@ -1023,56 +1011,56 @@ ul {
     }
     .navlinks ul li {
         margin: 10px 0;
-        margin-left: 0; /* Reset margin */
+        margin-left: 0; 
     }
     .navlinks ul li a {
         font-size: 1.2rem;
     }
     .menubutton {
-        display: block; /* Show hamburger menu */
+        display: block; 
     }
 
     .herotext .greeting { font-size: 2.5rem; }
     .herotext .tagline { font-size: 1.2rem; }
 
     .projectgrid {
-        grid-template-columns: 1fr; /* Stack project cards */
+        grid-template-columns: 1fr; 
     }
 
     .timeline::after {
-        left: 20px; /* Move timeline line to the left */
+        left: 20px; 
     }
     .timelineitem {
         width: 100%;
-        padding-left: 50px; /* Adjust padding for content */
+        padding-left: 50px; 
         padding-right: 10px;
     }
     .timelineitem:nth-child(even) {
-        left: 0%; /* Stack all items on the left */
+        left: 0%; 
     }
     .timelineitem::after {
-        left: 12.5px; /* Adjust circle position */
+        left: 12.5px; 
     }
 
     .portfoliocard {
-        grid-template-columns: 1fr !important; /* Force single column on mobile for all cards */
+        grid-template-columns: 1fr !important; 
         padding: 20px;
     }
     .portfoliocard .cardimage,
     .portfoliocard:nth-child(even) .cardimage {
-        grid-column: auto; /* Reset grid placement */
+        grid-column: auto; 
         grid-row: auto;
     }
      .portfoliocard .carddetails,
     .portfoliocard:nth-child(even) .carddetails {
-        grid-column: auto; /* Reset grid placement */
+        grid-column: auto; 
         grid-row: auto;
     }
     .cardimage img { max-height: 250px; }
     .carddetails h3 { font-size: 1.5rem; }
 
     .contactlayout {
-        grid-template-columns: 1fr; /* Stack contact info and form */
+        grid-template-columns: 1fr; 
     }
 }
 
@@ -1082,7 +1070,7 @@ ul {
     .herotext .greeting { font-size: 2.2rem; }
     .herotext .tagline { font-size: 1.1rem; }
     .herotext .button {
-        display: block; /* Stack buttons */
+        display: block; 
         margin-right: 0;
         margin-bottom: 15px;
     }
